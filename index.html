@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Notifications, Search and Menu</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="wrapper">
+                <div class="menu">
+                    <ul>
+                        <li><ion-icon name="speedometer-outline"></ion-icon> Dashboard</li>
+                        <li><ion-icon name="person-outline"></ion-icon> Profile</li>
+                        <li><ion-icon name="notifications-outline"></ion-icon> Notifications</li>
+                        <li><ion-icon name="chatbubbles-outline"></ion-icon> Message</li>
+                        <li><ion-icon name="settings-outline"></ion-icon> Setting</li>
+                    </ul>
+                </div>
+                <div class="page">
+                    <div class="page-header">
+                        <ion-icon name="grid-outline" id="open-menu"></ion-icon>
+                        <p>Notifications</p>
+                        <div class="header_search">
+                            <input type="text" placeholder="Search..." id="search">
+                            <button id="open-search-input">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="page-main">
+                        <div class="line"></div>
+                        <ul class="notifications">
+                            <li>
+                                <p class="notification_time">9:24 AM</p>
+                                <p class="notification_text"><b>John Walker</b> posted a photo on your wall.</p>
+                            </li>
+                            <li>
+                                <p class="notification_time">8:19 AM</p>
+                                <p class="notification_text"><b>Alice Parker</b> commented your last post.</p>
+                            </li>
+                            <li>
+                                <p class="notification_time">Yesterday</p>
+                                <p class="notification_text"><b>Luke Wayne</b> added your as friend.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
